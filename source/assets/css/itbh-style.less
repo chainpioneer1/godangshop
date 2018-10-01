@@ -1,0 +1,990 @@
+
+
+html{
+  font-size: 16px;
+}
+body{
+  color: #666;
+}
+
+h1 , h2 , h3 , h4 , h5 , p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+
+
+/*****************************  Galaxy S5, iphone 5, iphone 6 ( Portraid )  *******************************/
+@media screen and (min-width : 300px) and (max-width : 400px){
+  .itbh-container{
+    width: 100%;
+  }
+}
+
+/*****************************  Nexus 5X, Nexus 6P, iphone 6 plus( Portraid )  *******************************/
+@media screen and (min-width : 400px) and (max-width : 500px){
+  .itbh-container{
+    width: 100%;
+  }
+}
+
+/*****************************  iphone 5 ( Landscape )  *******************************/
+@media screen and (min-width : 500px) and (max-width : 600px){
+  .itbh-container{
+    width: 100%;
+  }
+}
+
+/*****************************  Galaxy S5, iphone 6 ( Landscape )  *******************************/
+@media screen and (min-width : 600px) and (max-width : 700px){
+  .itbh-container{
+    width: 100%;
+  }
+}
+
+/*****************************  Nexus 5X, Nexus 6P, iphone 6 plus( Landscape ), iPad( Portrait )  *******************************/
+@media screen and (min-width : 700px) and (max-width : 800px){
+  .itbh-container{
+    width: 100%;
+  }
+}
+
+/*****************************  iPad( Landscape ), laptop  *******************************/
+@media screen and (min-width : 800px) and (max-width : 1200px) and (orientation: landscape) {
+  .itbh-container{
+    width: 100%;
+  }
+}
+
+/*****************************  Desktop  *******************************/
+@media screen and (min-width : 1000px) and (max-width : 1440px){
+  .itbh-container{
+    width: 100%;
+  }
+}
+
+/*****************************  Huge screen  *******************************/
+@media screen and (min-width : 1800px){
+  .itbh-container{
+    width: 1440px;
+  }
+}
+
+
+
+
+ul.itbh-navigation{
+  padding-left: 20px;
+  list-style: none;
+  >li{
+    display: inline-block;
+    padding: 5px 12px;
+    a{
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #1f2836;
+      line-height: 2rem;
+    }
+    a:hover{
+      color: #0087e0;
+    }
+  }
+}
+
+
+.main-menu-wrapper{
+
+  #main-nav{
+    float: left;
+  }
+  #first-menu{
+    img.profile_small_img{
+      margin-right: 10px;
+      border-radius: 24px;
+      border: 3px solid #bbb;
+    }
+    li{
+      position: relative;
+    }
+    li.even{
+      background-color: #f9f9f9;
+    }
+  }
+}
+
+
+.second-menu-wrapper{
+
+  background-color: #fff;
+  #logo{
+    float: left;
+    img{
+      //vertical-align: top;
+    }
+  }
+  ul.itbh-navigation{
+    float: right;
+    margin: 0;
+    //margin: 0 0 0 170px;
+    >li{
+      padding: 5px 11px;
+      a{
+        color: #1c1c1c;
+        font-size: 1.1rem;
+      }
+    }
+    li:hover{
+      background-color: rgba(255,255,255,0.3);
+    }
+
+  }
+}
+
+
+
+// main section ********************************************************************************************************
+
+.main-content-wrap{
+  position:relative;
+}
+.dashboard-banner{
+  z-index: -999;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.page-title{
+  h2{
+    font-size: 2.5rem;
+    color: #666;
+    margin: 30px 0 0 30px;
+  }
+}
+.main-content{
+  background-color: #fff;
+  width: 100%;
+  min-height: 400px;
+}
+
+.photo-section{
+  display: inline-block;
+  width: 20%;
+  padding-top: 65px;
+  .photo-image{
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+  }
+  .profile-progress{
+    margin: 10px 0;
+    span{
+      font-size: 1rem;
+    }
+  }
+  .profile-action{
+    a{
+      width: 100%;
+      font-size: 1.1rem;
+      margin: 5px 0;
+    }
+  }
+
+}
+
+
+.itbh-border-btn{
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 7px;
+  border: 3px solid #4bacff;
+  background-color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+
+}
+
+
+.notification-section{
+  display: inline-block;
+  width: 55%;
+  //padding-top: 65px;
+  .notification-action{
+    padding-top: 25px;
+    margin-bottom: 10px;
+    a{
+      display: inline-block;
+      margin-right: 40px;
+      font-size: 1.4rem;
+      color: #008aff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    a:hover{
+      color: #4bacff;
+    }
+  }
+  .project-row{
+    background: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    border-top: 3px solid #4bacff;
+    padding: 18px;
+    margin-bottom: 40px;
+
+    .project-caption{
+      h4{
+        display: inline-block;
+        float: left;
+        padding-top: 5px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #008aff;
+      }
+      span{
+        display: inline-block;
+        float: right;
+      }
+    }
+    .notification-content{
+      margin-top: 20px;
+      font-size: 1rem;
+      //color: #444;
+    }
+    .project-link{
+      margin-top: 15px;
+      .link-photo{
+        display: inline-block;
+        img{
+          vertical-align: bottom;
+        }
+      }
+      .link-info{
+        display: inline-block;
+        span{
+          font-size: 1rem;
+          display: block;
+        }
+        span.top{
+          color: #aaa;
+        }
+        span.bottom{
+          font-weight: bold;
+          a{
+            color: #666;
+            text-decoration: none;
+          }
+          a:hover{
+            color: #8bc9fe;
+          }
+        }
+      }
+      .link-view{
+        display: inline-block;
+        float: right;
+        font-size: 1rem;
+        margin-top: 20px;
+        a{
+          color: #008aff;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        a:hover{
+          color: #4bacff;
+        }
+      }
+    }
+  }
+  .project-row.in-progress{
+    border-top: 3px solid #7fd07f;
+    .itbh-border-btn{
+      border-color: #7fd07f;
+      color: #7fd07f;
+    }
+  }
+  .project-row.cancel{
+    border-top: 3px solid #ff9256;
+    .itbh-border-btn{
+      border-color: #ff9256;
+      color: #ff9256;
+    }
+  }
+
+  .notification-row{
+    background: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    border-top: 3px solid #4bacff;
+    padding: 7px 20px;
+    margin-bottom: 20px;
+    div{
+      display: inline-block;
+      font-size: 1rem;
+      img{
+        vertical-align: bottom;
+      }
+    }
+  }
+}
+
+
+
+.skill-section{
+  display: inline-block;
+  width: 25%;
+  .skill-caption{
+    text-align: right;
+    margin-top: 20px;
+    a{
+      font-size: 1.3rem;
+      color: #fff;
+      display: inline-block;
+      background-color: #ff9256;
+      padding: 10px 25px;
+      margin: 1px 0 0 0;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+  .skill-content{
+    font-size: 1.1rem;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 18px;
+    p{
+      padding: 5px 0;
+    }
+  }
+}
+
+
+
+// edit skill **************************************************************************************************************
+#edit_skill_popup{
+  background: #eee;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  padding: 30px;
+  .skill-cat-action{
+    text-align: right;
+    margin-top: -50px;
+    margin-bottom: 10px;
+  }
+  h3{
+    font-size: 1.8rem;
+    color: #008aff;
+    margin: 10px 0 30px 0;
+  }
+  .skill-cat-wrap{
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    height: 740px;
+    ul{
+      list-style: none;
+      padding: 0;
+      li{
+        display: inline-block;
+        float: left;
+        margin: 5px;
+        padding: 20px 10px 10px 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+        a{
+          display: block;
+          width: 160px;
+          height: 100px;
+          text-align: center;
+          text-decoration: none;
+          cursor: pointer;
+          h4{
+            color: #008aff;
+            font-size: 1.1rem;
+            //font-weight: bold;
+          }
+        }
+        a:hover{
+          color: #4bacff;
+        }
+      }
+    }
+  }
+
+  .skill-all-wrap, .skill-single-cat-list{
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    height: 740px;
+    overflow: scroll;
+    ul{
+      list-style: none;
+      padding: 10px 20px;
+      li{
+        display: inline-block;
+        float: left;
+        margin: 10px 0;
+        width: 370px;
+
+        a{
+          padding: 10px 10px;
+          border-radius: 5px;
+          color: #666;
+          text-decoration: none;
+          cursor: pointer;
+          font-size: 1.1rem;
+        }
+        a:hover{
+          color: #fff;
+          background-color: #9cd0fd;
+        }
+        :hover{
+
+        }
+      }
+
+    }
+  }
+  .skill-single-cat-list{
+    overflow: hidden;
+  }
+  #itbh-skill-back{
+    margin: 10px 25px;
+  }
+}
+
+
+
+
+
+// footer **************************************************************************************************************
+
+#footer{
+  padding-top: 20px;
+  background-color: #3a3a3a;
+  color: #aaa;
+  font-size: 1.1rem;
+  h4{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fafafa;
+    padding-bottom: 20px;
+  }
+  ul{
+    list-style: none;
+    padding-left: 0px;
+    li{
+      margin: 5px 2px;
+      a{
+        color: #bfbfbf;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 10px 0px;
+      }
+      a:hover{
+        color: #fefefe;
+      }
+    }
+  }
+  #footer-subscribe{
+    background-color: #313131;
+    color: #fff;
+  }
+  .main-footer{
+    padding: 20px 0 40px 0;
+    .social-icons {
+      margin-top: 10px;
+      i {
+        margin-left: 20px;
+        font-size: 28px;
+        color:#fff;
+      }
+    }
+  }
+  .copyright-section{
+    color: #fff;
+    background-color: #313131;
+    padding: 20px 0;
+  }
+}
+
+// ********************** home page****************************
+.home-page-header{
+  position: relative;
+  background-size: 100% auto;
+}
+.home-page-header-info{
+  text-align: center;
+  color: #ff0000;
+
+  .home-search-product-form {
+    div {
+      padding-top: 27px;
+      input {
+        height: 45px;
+      }
+      button {
+        background-color: #231f20; height: 45px; width: 100px;
+      }
+    }
+  }
+
+
+}
+
+.product-price {
+  text-align: left; color: #3383ca;font-size: 36px;
+}
+
+
+
+
+// **********************products page  **********************************************************************************************************
+.products-page-header{
+    text-align: center;
+    color: #fff;
+    h2{
+      font-size: 3rem;
+      font-weight: bold;
+  }
+}
+
+.products-categories{
+  .sidebar{
+    .active>a>.fa.arrow:before {
+      content: "\f107";
+    }
+    .fa {
+      float: right;
+      .arrow:before{
+        content: "\f104";
+      }
+    }
+    ul li {
+      border-bottom: 1px solid #f4f4f4;
+      a.active{
+        color: #393939;
+      }
+    }
+    .sidebar-nav.navbar-collapse {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+
+    .nav-second-level li{
+      border-bottom: 0!important;
+      a {
+        padding-left: 37px;
+      }
+    }
+  }
+
+}
+
+.products-pagination-params {
+  b {
+    color: #000;
+  }
+}
+.product-elem-wrap {
+  //border: 1px solid #ddd;
+  .product-elem{
+    padding: 20px 15px;
+    .thumbnail{
+      background-color: #f9f9f9;
+    }
+    .over {
+      border:1px solid #fc960d;
+    }
+    img{
+      width: 160px;
+      height: 160px;
+    }
+    h3{
+      font-size: 1.2rem;
+      .product-elem-name{
+        text-decoration: none;
+        cursor: pointer;
+        color: #222;
+      }
+    }
+    .product-item-price {
+      font-size: 1.2rem;
+      color: #fc960d;
+    }
+    .product-elem-category{
+      font-weight: 700;
+    }
+  }
+}
+
+// pagination in products page
+.products-pagination {
+  margin-top: 20px;
+    display: inline-block;
+    float: right;
+  text-align: right;
+    ul {
+
+      float: left;
+      margin: 0px;
+      padding: 5px 0 ;
+      width: 100%;
+      li {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: normal;
+        list-style-type: none;
+        padding: 1px;
+      }
+      a {
+        background: none repeat scroll 0 0 rgba(0,0,0,0);
+        color: #333;
+        font-weight: bold;
+        padding: 10px 14px ;
+        text-decoration: none;
+        font-size: 1.1rem;
+        margin-right: 4px;
+      }
+      a:hover {
+        background-color: #fc960d;
+        color: #fff;
+      }
+
+    }
+}
+
+
+
+// itbh comment : this is for separate product page
+
+.product-image-gallery-item-div {
+  border: 1px solid #ccc; padding: 10px;
+}
+.product-image-gallery-item-img {
+  width:100%; height: 30px;border: solid 1px #ddd;
+}
+.product-item-specification {
+  tr {
+    td {
+      border-top: none !important;
+    }
+  }
+}
+
+.product-item-document {
+  tr {
+    td {
+      border-top: none !important;
+    }
+  }
+}
+.product_information {
+  p {
+    text-align: left;
+    span {
+      font-size: 1.1rem;
+    }
+  }
+
+}
+
+.product-item-add-to-groupbuying {
+   a {
+     width: 50%; background-color: #44aaff;height: 40px; font-size: 1.1rem;
+   }
+
+}
+
+.product-item-related-products {
+  a {
+    text-decoration: none;
+  }
+  .product-related-item-img {
+    display: block; text-align: center;
+  }
+  p { text-align: center;}
+  img {
+    width: 120px; height: 120px;border: 1px solid #ddd;padding: 10px;
+  }
+
+  .product-related-item-name {
+    text-align: center;
+  }
+}
+#product-item-page-related-next-btn {
+  span {
+    border: 1px solid #ccc; font-size: 36px; padding: 10px; margin-top: 30px;
+  }
+}
+
+// itbh comment : this is faq page
+.faq_title {
+  text-decoration: none;
+  color: #333;
+
+}
+.faq_description {
+  font-size: 1.1rem;
+}
+
+// itbh comment : contact us page
+
+.contact-us-information {
+  li {
+    list-style-type: none;
+  }
+
+
+}
+
+
+// itbh comment : my account
+.itbh-login-form {
+  label {
+    font-weight: 200;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .myaccount-login-button {
+    background-color:#3285cb;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .send-request-button {
+    background-color:#83e11a;
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+.itbh-myaccount-menu {
+  .nav-item {
+    list-style-type: none;
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  a {
+    text-decoration: none;
+    color: #666;
+    font-size: 1.3rem;
+  }
+  a:hover{
+    color: #454545;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+}
+
+.myaccount-order-details {
+  padding-left:20px;width:50%;
+  display: inline-block;
+}
+
+.myaccount-address-detail-billing {
+  a:hover{
+    text-decoration: none;
+  }
+}
+
+.myaccount-address-detail-shipping {
+  a:hover{
+    text-decoration: none;
+  }
+}
+#myaccount-billing_address-detail {
+  span{
+    color:red;
+  }
+}
+#myaccount-shipping_address-detail {
+  span {
+    color:red;
+  }
+}
+
+#myaccount-detail-update {
+  span {
+     color: red;
+  }
+}
+
+
+
+
+// sellers admin page
+.itbh-sellers-rating {
+  margin-top: 60px;
+  width: 300px;
+  height: 120px;
+  border: solid #aaa 1px;
+}
+
+
+// itbh comment : sellers products page
+.itbh-sellers-products {
+  .control-label {
+    font-weight: 100 !important;
+  }
+}
+.itbh-sellers-products-tbl {
+
+  .itbh-sellers-products-singlie-item {
+    border: solid 1px #ddd; width: 100px;height: 100px; padding: 15px;
+  }
+  .itbh-sellers-products-singlie-item {
+    .hover {
+      border: solid 1px #6f6bdd; width: 100px;height: 100px; padding: 15px;
+
+    }
+  }
+}
+
+
+
+// itbh comment : sellers warehouse page
+.itbh-my-warehouse-contact_information {
+  li {
+    list-style-type: none;
+  }
+}
+.itbh-warehouse-information {
+  .required {
+    color: red;
+  }
+}
+
+
+
+// itbh comment : sellers order page
+.itbh-sellers-view-order {
+  .order-status {
+    color: #ff9f10;
+  }
+  .itbh-sellers-order-detail-tbl {
+    border: none;
+    th {
+      border: none;
+    }
+    td {
+      border: none;
+    }
+    th{
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  .itbh-sellers-orders-customer-billing {
+    margin-bottom: 70px;
+    li {
+      list-style: none;
+      padding-left: 10px;
+    }
+  }
+}
+
+
+
+// itbh comment : sellers add products page
+
+
+.itbh-sellers-products{
+  .page-content {
+    min-height: 1305px;
+  }
+  .product-specification {
+    .product_specification_title {
+      margin-bottom: 10px;
+      height: 35px;
+      border: none;
+    }
+    .product_specification_content {
+      margin-bottom: 10px;
+      height: 35px;
+      border: none;
+    }
+    .itbh-sellers-products-description-remove {
+      transform: scale(2);
+      color:#dd4444;
+    }
+  }
+}
+
+
+
+
+// itbh comment  : home page css definition
+
+#myUL {
+  padding : 0;
+  margin: 0;
+  li{
+    a {
+      margin-top: -1px; /* Prevent double borders */
+      background-color: #fff;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      color: black;
+      display: block
+    }
+    a.header {
+      background-color: #fff;
+      cursor: default;
+    }
+    a:hover:not(.header) {
+      background-color: #fff;
+    }
+
+  }
+}
+
+
+
+// itbh comment :  responsive web design
+
+/*****************************  Galaxy S5, iphone 5, iphone 6 ( Portraid )  *******************************/
+@media screen and (min-width : 300px) and (max-width : 400px){
+
+}
+
+/*****************************  Nexus 5X, Nexus 6P, iphone 6 plus( Portraid )  *******************************/
+@media screen and (min-width : 400px) and (max-width : 500px){
+
+}
+
+/*****************************  iphone 5 ( Landscape )  *******************************/
+@media screen and (min-width : 500px) and (max-width : 600px){
+
+}
+
+/*****************************  Galaxy S5, iphone 6 ( Landscape )  *******************************/
+@media screen and (min-width : 600px) and (max-width : 700px){
+
+}
+
+/*****************************  Nexus 5X, Nexus 6P, iphone 6 plus( Landscape ), iPad( Portrait )  *******************************/
+@media screen and (min-width : 700px) and (max-width : 800px){
+
+}
+
+/*****************************  iPad( Landscape ), laptop  *******************************/
+@media screen and (min-width : 800px) and (max-width : 1200px) and (orientation: landscape) {
+
+}
+
+/*****************************  Desktop  *******************************/
+@media screen and (min-width : 1000px) and (max-width : 1500px){
+
+}
+
+/*****************************  Huge screen  *******************************/
+@media screen and (min-width : 1800px){
+
+}

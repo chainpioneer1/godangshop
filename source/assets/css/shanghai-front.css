@@ -1,0 +1,10 @@
+a#sh_register_btn
+{
+    width:172px;
+    height:73px;
+    transform: scale(0.5);
+}
+a#sh_non_register_btn{
+    width:172px;
+    height:73px;
+}

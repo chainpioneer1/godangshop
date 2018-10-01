@@ -1,0 +1,23 @@
+<tr class="odd gradeX itbh-sellers-products-tbl">
+
+				<td style="padding: 20px;"><a href="<?= base_url('sellers/view_order/' . $order->order_id)?>" ><?= $order->order_id?></a></td>
+				<td style="padding: 20px;"><?php
+						$customer_id = $this->orders_m->get_customerid_byorder_id($order->order_id);
+						$sql = array();
+						$sql['customer_id'] = $customer_id;
+						if (!empty($this->customers_m->get_single_customer($sql))){
+						echo $this->customers_m->get_single_customer($sql)->fullname;
+					} else echo $this->lang->line('not_found');
+					?></td>
+
+
+
+				<td style="padding: 20px;"><?= $order->total?></td>
+				<td style="padding: 20px;"><?= $order->registered_date?></td>
+				<td style="padding: 20px;"><?= $order->order_status?></td>
+				<td style="padding: 20px;">
+					<a class="btn btn-sm btn-success" href="<?= base_url('sellers/view_order/' . $order->order_id)?>"><?=$this->lang->line('view')?></a>
+					<!--<a class="btn btn-sm btn-warning" href="<?= base_url('sellers/edit_order/' . $order->order_id) ?>"><?=$this->lang->line('edit');?></a>-->
+					<a class="btn btn-sm btn-danger" href="<?= base_url('sellers/delete_order/' . $order->order_id) ?>"><?=$this->lang->line('delete');?></a>
+				</td>
+			</tr>
